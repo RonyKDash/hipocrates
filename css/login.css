@@ -1,0 +1,57 @@
+a {
+    color: rgb(255, 255, 255);
+}
+
+h3 {
+    text-align: center;
+    color: white;
+}
+
+h4 {
+    color: white;
+}
+
+p {
+    color: white;
+    font-size: 25px;
+}
+
+.entra {
+    text-align: center;
+    color: white;
+}
+
+.comeco {
+    text-align: right;
+    margin-left: auto;
+    padding: 5px;
+}
+
+.login form {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.login {
+    background-color: #375F90;
+    border-radius: 30px;
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    padding: 1rem;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+.num {
+    width: 3rem;
+    height: 3rem;
+    padding: 1rem;
+    border-radius: 50%;
+}

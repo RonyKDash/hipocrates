@@ -1,8 +1,508 @@
-/* importe a fonte aqui */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+:root {
+  --color-01: #FFFFFF;
+  --color-02: #E9F1FD;
+  --color-03: #D3E3FB;
+  --color-04: #BCD5FA;
+  --color-05: #A6C7F8;
+  --color-06: #90B9F6;
+  --color-07: #7AABF4;
+  --color-08: #639DF2;
+  --color-09: #4D8EF1;
+  --color-10: #3780EF;
+  --color-11: #2172ED;
+  --color-12: #1266E3;
+  --color-13: #115CCD;
+  --color-14: #0F52B7;
+  --color-15: #0D47A1;
+  --color-16: #0C4395;
+  --color-17: #0B3E89;
+  --color-18: #0A397E;
+  --color-19: #093373;
+  --color-20: #082E67;
+  --color-21: #07295C;
+  --color-22: #072450;
+  --color-23: #061F45;
+  --color-24: #051A39;
+  --color-25: #04152E;
+  --color-26: #030F22;
+  --color-27: #020A17;
+  --color-28: #01050B;
+  --color-29: #000000;
+}
 
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    /* coloque o font-family adequado */
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #2F4C73;
+  background-image: linear-gradient(to right, rgba(17, 42, 88, 0.749), rgba(17, 42, 88, 0.749)), url("/hipocrates/imgs/esteto.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+
+html,
+body,
+main,
+.container,
+.mySlides {
+  height: 100%;
+  min-height: 100%;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  background-color: #003554;
+  justify-content: flex-start;
+  align-items: center;
+  width: fit-content;
+  height: 100%;
+  position: absolute;
+  left: -9.2rem;
+  transition: 0.5s;
+  z-index: 1;
+}
+
+nav a,
+.dropdown-btn {
+  color: white;
+  display: flex;
+  width: 12rem;
+  align-items: center;
+  text-decoration: none;
+  justify-content: space-between;
+  margin: 0.5rem;
+  padding: 1rem;
+  font-size: 1em;
+}
+
+nav:hover {
+  left: 0;
+}
+
+nav a:hover,
+.dropdown-btn:hover {
+  background-color: #4b87d0;
+}
+
+main {
+  position: absolute;
+  left: 3.8rem;
+  max-height: 100%;
+  overflow: auto;
+  width: -webkit-fill-available;
+}
+
+figure#logo {
+  margin: 1rem;
+}
+
+.dropdown-btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  border-radius: 0;
+}
+
+.dropdown-container {
+  display: none;
+  background-color: #262626;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+}
+
+.mySlides {
+  display: none;
+}
+
+.mySlides img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.txt-img {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  left: 10%;
+  padding: 1rem;
+  color: white;
+  text-align: center;
+  font-size: 1em;
+  translate: -10% -50%;
+}
+
+button {
+  background-color: #00345280;
+  border: none;
+  border-radius: 10px;
+  padding: 1rem;
+  color: white;
+  cursor: pointer;
+  margin: 1rem;
+}
+
+button:hover {
+  background-color: #003554;
+}
+
+.btn-sucesso {
+  background-color: rgba(0, 128, 128, 0.5);
+}
+
+.btn-sucesso:hover {
+  background-color: teal;
+}
+
+.btn-perigo {
+  background-color: rgba(220, 53, 70, 0.5);
+}
+
+.btn-perigo:hover {
+  background-color: #dc3545;
+}
+
+.btn-alerta {
+  background-color: rgba(255, 193, 7, 0.5);
+}
+
+.btn-alerta:hover {
+  background-color: #ffc107;
+}
+
+.esticar90 {
+  padding-bottom: 10px;
+  padding-top: 10px;
+  width: 90%;
+}
+
+.esticar40 {
+  padding-bottom: 10px;
+  padding-top: 10px;
+  width: 30%;
+}
+
+.App {
+  background-color: #3d7ec476;
+  border-radius: 35px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  position: relative;
+  margin-top: 5%;
+  margin-right: 15%;
+  margin-left: 15%;
+}
+
+.espacamento {
+  padding-top: 0.7rem;
+}
+
+.password {
+  padding-top: 0.7rem;
+}
+
+.ns {
+  padding-top: 0.7rem;
+}
+
+.tel {
+  padding-top: 0.7rem;
+}
+
+/* cadastro */
+
+/* verificacao cadastro */
+.reenvio {
+  text-decoration: underline;
+}
+
+.hj {
+  border-radius: 50px;
+}
+
+.verificacao {
+  display: flex;
+  align-items: center;
+  outline: none;
+}
+
+.verificacao input {
+  text-align: center;
+  font-size: 1.125rem;
+}
+
+.verificacao input::-webkit-inner-spin-button,
+.verificacao input::-webkit-inner-outer-button {
+  display: none;
+}
+
+.text-sms {
+  padding-top: 2rem;
+  padding-left: 4rem;
+}
+
+.tit1 {
+  width: 100%;
+  justify-content: space-evenly;
+  display: flex;
+  color: #fff;
+  font-size: 40px;
+  text-align: center;
+}
+
+.text1 {
+  text-align: justify;
+  display: flex;
+  color: #fff;
+  padding: 0 10rem;
+}
+
+.sobre {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem;
+  padding-bottom: 5rem;
+}
+
+.contato-icons {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.icons-svg {
+  filter: invert(100%) sepia(100%) saturate(2%) hue-rotate(317deg) brightness(108%) contrast(101%);
+  margin: 0.5rem;
+}
+
+address {
+  color: white;
+  text-align: center;
+}
+
+#hip-foto {
+  display: flex;
+  margin: 1rem;
+  align-items: center;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+}
+
+#hip-foto figure {
+  width: 20%;
+}
+
+#hip-foto .text1 {
+  width: 50%;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .text1 {
+    padding: 1rem;
+  }
+
+  .txt-img {
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    top: auto;
+    translate: unset;
+  }
+
+  .login {
+    width: 90%;
+  }
+
+  input,
+  select {
+    font-size: small;
+  }
+
+  #cad-user {
+    width: 95%;
+  }
+
+  .form-item {
+    display: block;
+  }
+
+  #cad-user input,
+  #cad-user select,
+  .perfil input,
+  .perfil select {
+    width: 100%;
+  }
+
+  .metade {
+    width: 100%;
+  }
+
+  .img-pessoais {
+    display: block;
+  }
+
+  #hip-foto {
+    flex-direction: column;
+  }
+
+  #hip-foto figure {
+    width: 50%;
+  }
+
+  #hip-foto .text1 {
+    width: 100%;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .text1 {
+    padding: 1rem;
+  }
+
+  .txt-img {
+    width: 60%;
+    top: 70%;
+  }
+
+  .login {
+    width: 90%;
+  }
+
+  .metade {
+    width: 100%;
+  }
+
+  .img-pessoais {
+    display: block;
+  }
+
+  #hip-foto {
+    flex-direction: column;
+  }
+
+  #hip-foto figure {
+    width: 50%;
+  }
+
+  #hip-foto .text1 {
+    width: 100%;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .txt-img {
+    width: 70%;
+    top: 65%;
+  }
+
+  .login {
+    width: 60%;
+  }
+
+  .img-pessoais {
+    display: flex;
+  }
+
+  .img-pessoais .form-item {
+    flex-direction: column;
+  }
+
+  .perfil input,
+  .perfil select {
+    width: 100%;
+  }
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .txt-img {
+    width: 45%;
+    top: 65%;
+  }
+
+  .login {
+    width: 70%;
+  }
+
+  .img-pessoais .form-item {
+    flex-direction: row;
+  }
+
+  .perfil input,
+  .perfil select {
+    width: 60%;
+  }
+
+  #hip-foto {
+    flex-direction: row;
+  }
+
+  #hip-foto figure {
+    width: 20%;
+  }
+
+  #hip-foto .text1 {
+    width: 50%;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .txt-img {
+    width: 30%;
+    top: 50%;
+  }
+
+  .login {
+    width: 50%;
+  }
 }

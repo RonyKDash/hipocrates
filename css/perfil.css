@@ -1,0 +1,32 @@
+.perfil {
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.img-pessoais {
+    display: flex;
+}
+
+.img-pessoais img {
+    object-fit: cover;
+    height: 100%;
+}
+
+.perfil input, .perfil select {
+    font-size: initial;
+    width: 60%;
+}
+
+.img-pessoais .form-item {
+    flex-grow: 1;
+}
+
+.perfil fieldset {
+    width: 100%;
+}
+
+.metade {
+    width: 50%;
+}

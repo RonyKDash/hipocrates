@@ -1,0 +1,56 @@
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+input, select, textarea {
+    font-size: 2rem;
+    width: 100%;
+    margin: 0.5rem;
+    background-color: rgba(95, 95, 255, 0.757);
+    color: aliceblue;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    padding: 0.5rem;
+}
+
+input::placeholder {
+    color: aliceblue;
+    text-align: center;
+}
+
+label {
+    color: white;
+    font-size: 15pt;
+}
+
+#txt-centro {
+    text-align: center;
+    color: aliceblue;
+    font-size: 20pt;
+}
+
+#btn-agend {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    background-color: rgba(95, 95, 255, 0.757);
+    border-color: blue;
+    color: aliceblue;
+    border-radius: 10px;
+    outline: none;
+    font-size: 15pt;
+    cursor: pointer;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
